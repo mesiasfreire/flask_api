@@ -8,7 +8,7 @@ class TarefaSchema(ma.ModelSchema):
         model = tarefa_model.Tarefa
         fields = ("id", "titulo", "descricao", "data_expiracao")
 
-    titulo.fields.String(required=True)
-    descricao.fields.String(required=True)
-    data_expiracao.fields.Date(required=True)
+        titulo.fields.String(required=True)
+        descricao.fields.String(required=True)
+        data_expiracao.fields.Date(required=True)
 
