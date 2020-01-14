@@ -1,8 +1,8 @@
 class Tarefa():
-    def __init(self, titulo ,descricao , data_expiracao):
+    def __init__(self, titulo, descricao, data_expiracao):
         self.__titulo = titulo
-        self.descricao = descricao
-        self.data_expiracao = data_expiracao
+        self.__descricao = descricao
+        self.__data_expiracao = data_expiracao
 
         @property
         def titulo(self):
@@ -10,7 +10,7 @@ class Tarefa():
 
         @titulo.setter
         def titulo(self, titulo):
-            self__titulo = titulo
+            self.__titulo = titulo
 
         @property
         def descricao(self):
@@ -18,12 +18,12 @@ class Tarefa():
 
         @descricao.setter
         def descricao(self, descricao):
-            self__descricao = descricao
+            self.__descricao = descricao
 
         @property
         def data_expiracao(self):
             return self.__data_expiracao
 
-        @descricao.setter
+        @data_expiracao.setter
         def data_expiracao(self, data_expiracao):
-            self__data_expiracao = data_expiracao
+            self.__data_expiracao = data_expiracao
